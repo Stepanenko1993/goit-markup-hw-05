@@ -25,7 +25,7 @@
         >
 
         <ul class="menu-nav social-links">
-          <li><a class="menu link current" href="">Студія</a></li>
+          <li class="link-after"><a class="menu link current link-before" href="">Студія</a></li>
           <li>
             <a class="menu link hreff hover-nav" href="./portfolio.html">Портфоліо</a>
           </li>
@@ -69,8 +69,8 @@
         <div class="container container-color">
         <div class="container-text">
         <h1 class="main-list">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="modal-open current-button" type="button">
-          <span class="modal-text">Замовити послугу</span></button>
+        <button class="modal-open current-button" type="button" data-modal-open>
+          <span class="modal-text" >Замовити послугу</span></button>
         </div>
         </button>
       </section> 
@@ -493,6 +493,16 @@
       </div>
     </div>
     </footer>
-     <script src="./js/modal.js"></script>
+     
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal-close">
+        <button type="button" class="button-backdrop" data-modal-close>
+          <svg  arial-lable="Vector1"  class="close" width="11" height="11" > 
+          <use href="./images/icons.svg.svg#Vector"></use>
+        </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
